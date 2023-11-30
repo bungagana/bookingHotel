@@ -1,0 +1,58 @@
+/* CSS for Saved Room Card */
+
+.SavedRoomCard {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    width: 220px;
+}
+
+.SavedRoomCard:hover {
+    transform: scale(1.03);
+}
+
+.SavedRoomImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.SavedRoomDetail {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* Ensure SavedRoomDetail takes full height */
+    padding: 16px;
+}
+
+.SavedRoomName {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.SavedRoomPrice {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(220, 91, 4);
+    font-style: italic;
+    margin-top: 8px;
+}
+
+.SavedMaxOccupancy {
+    font-size: 14px;
+    margin-top: -40px;
+    margin-bottom: 24px;
+    /* Push SavedMaxOccupancy to the bottom */
+    align-self: flex-end;
+    /* Align SavedMaxOccupancy to the flex-end */
+    color: #555;
+    font-style: italic;
+}
